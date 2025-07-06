@@ -25,4 +25,5 @@ jobs:
         run: mvn -B package --file backend/pom.xml
 
       - name: Run tests
+        working-directory: backend 
         run: mvn test
